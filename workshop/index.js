@@ -4,6 +4,8 @@ const multiply = (a, b) => a * b;
 const divide = (a, b) => a / b;
 
 function calculate(a, sign, b) {
+  a = parseFloat(a);
+  b = parseFloat(b);
   switch (sign) {
     case "+":
       return add(a, b);
